@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PTLModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="ipdVitalSign">
+    <Key>
+      <PropertyRef Name="HN" />
+      <PropertyRef Name="RegNo" />
+      <PropertyRef Name="AN" />
+      <PropertyRef Name="Seq" />
+    </Key>
+    <Property Name="HN" Type="String" MaxLength="7" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="RegNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="AN" Type="String" MaxLength="7" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Seq" Type="Int32" Nullable="false" />
+    <Property Name="wk_Period" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="wk_date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="wk_date_text" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="wk_time" Type="Time" Nullable="false" Precision="7" />
+    <Property Name="wk_time_text" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Systolic" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Diastotic" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="MAP" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="O2Sat" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="O2SatPreduct" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="O2SatPostduct" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Plus" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Respirations" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="UserID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="UserName" Type="String" MaxLength="500" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CreateOn" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityContainer Name="PTLEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ipdVitalSigns" EntityType="Self.ipdVitalSign" />
+    <EntitySet Name="ipdBodies" EntityType="PTLModel.ipdBody" />
+    <EntitySet Name="ipdFluids" EntityType="PTLModel.ipdFluid" />
+    <EntitySet Name="ipdOthers" EntityType="PTLModel.ipdOther" />
+    <EntitySet Name="ipdPains" EntityType="PTLModel.ipdPain" />
+    <EntitySet Name="ipdTemperatures" EntityType="PTLModel.ipdTemperature" />
+    <EntitySet Name="ptl_consult" EntityType="PTLModel.ptl_consult" />
+  </EntityContainer>
+  <EntityType Name="ipdBody">
+    <Key>
+      <PropertyRef Name="HN" />
+      <PropertyRef Name="RegNo" />
+      <PropertyRef Name="AN" />
+      <PropertyRef Name="Seq" />
+    </Key>
+    <Property Name="HN" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="RegNo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="AN" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Seq" Type="Int32" Nullable="false" />
+    <Property Name="wk_Period" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="wk_date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="wk_date_text" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="wk_time" Type="Time" Nullable="false" Precision="7" />
+    <Property Name="wk_time_text" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Weight" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="Height" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="Waistline" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="Hip" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="BM1" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="Head" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="Chest" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="UserID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UserName" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="CreateOn" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="ipdFluid">
+    <Key>
+      <PropertyRef Name="HN" />
+      <PropertyRef Name="RegNo" />
+      <PropertyRef Name="AN" />
+      <PropertyRef Name="Seq" />
+    </Key>
+    <Property Name="HN" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="RegNo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="AN" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Seq" Type="Int32" Nullable="false" />
+    <Property Name="wk_Period" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="wk_date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="wk_date_text" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="wk_time" Type="Time" Nullable="false" Precision="7" />
+    <Property Name="wk_time_text" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="OralFluid" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="Parenteral" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="Unine" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="Emesis" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="Drainage" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="Aspiration" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="Stools" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="Urine" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="UserID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UserName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CreateOn" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="ipdOther">
+    <Key>
+      <PropertyRef Name="HN" />
+      <PropertyRef Name="RegNo" />
+      <PropertyRef Name="AN" />
+      <PropertyRef Name="Seq" />
+    </Key>
+    <Property Name="HN" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="RegNo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="AN" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Seq" Type="Int32" Nullable="false" />
+    <Property Name="wk_Period" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="wk_date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="wk_date_text" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="wk_time" Type="Time" Nullable="false" Precision="7" />
+    <Property Name="wk_time_text" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="HF" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="Episiotomy" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Lochia" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SOS" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UserID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UserName" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="CreateOn" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="ipdPain">
+    <Key>
+      <PropertyRef Name="HN" />
+      <PropertyRef Name="RegNo" />
+      <PropertyRef Name="AN" />
+      <PropertyRef Name="Seq" />
+    </Key>
+    <Property Name="HN" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="RegNo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="AN" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Seq" Type="Int32" Nullable="false" />
+    <Property Name="wk_Period" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="wk_date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="wk_date_text" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="wk_time" Type="Time" Nullable="false" Precision="7" />
+    <Property Name="wk_time_text" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Pain" Type="Int32" Nullable="false" />
+    <Property Name="UserID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UserName" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="CreateOn" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="ipdTemperature">
+    <Key>
+      <PropertyRef Name="HN" />
+      <PropertyRef Name="RegNo" />
+      <PropertyRef Name="AN" />
+      <PropertyRef Name="Seq" />
+    </Key>
+    <Property Name="HN" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="RegNo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="AN" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Seq" Type="Int32" Nullable="false" />
+    <Property Name="wk_Period" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="wk_date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="wk_date_text" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="wk_time" Type="Time" Nullable="false" Precision="7" />
+    <Property Name="wk_time_text" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Temperature" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="UserID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UserName" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="CreateOn" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="ptl_consult">
+    <Key>
+      <PropertyRef Name="cs_id" />
+    </Key>
+    <Property Name="cs_id" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Name="AN" Type="String" MaxLength="7" FixedLength="true" Unicode="false" />
+    <Property Name="cs_date" Type="String" MaxLength="8" FixedLength="true" Unicode="false" />
+    <Property Name="cs_time" Type="DateTime" Precision="3" />
+    <Property Name="cs_cname" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="cs_header" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="cs_detail" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="cs_status" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="acc_doc" Type="String" MaxLength="6" FixedLength="true" Unicode="false" />
+    <Property Name="doc_comment" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="acc_date" Type="String" MaxLength="8" FixedLength="true" Unicode="false" />
+    <Property Name="acc_time" Type="DateTime" Precision="3" />
+    <Property Name="order_id" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+  </EntityType>
+</Schema>

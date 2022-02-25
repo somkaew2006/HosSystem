@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PTLModelStoreContainer" CdmEntityContainer="PTLEntities">
+    <EntitySetMapping Name="ipdVitalSigns">
+      <EntityTypeMapping TypeName="PTLModel.ipdVitalSign">
+        <MappingFragment StoreEntitySet="ipdVitalSign">
+          <ScalarProperty Name="HN" ColumnName="HN" />
+          <ScalarProperty Name="RegNo" ColumnName="RegNo" />
+          <ScalarProperty Name="AN" ColumnName="AN" />
+          <ScalarProperty Name="Seq" ColumnName="Seq" />
+          <ScalarProperty Name="wk_Period" ColumnName="wk_Period" />
+          <ScalarProperty Name="wk_date" ColumnName="wk_date" />
+          <ScalarProperty Name="wk_date_text" ColumnName="wk_date_text" />
+          <ScalarProperty Name="wk_time" ColumnName="wk_time" />
+          <ScalarProperty Name="wk_time_text" ColumnName="wk_time_text" />
+          <ScalarProperty Name="Systolic" ColumnName="Systolic" />
+          <ScalarProperty Name="Diastotic" ColumnName="Diastotic" />
+          <ScalarProperty Name="MAP" ColumnName="MAP" />
+          <ScalarProperty Name="O2Sat" ColumnName="O2Sat" />
+          <ScalarProperty Name="O2SatPreduct" ColumnName="O2SatPreduct" />
+          <ScalarProperty Name="O2SatPostduct" ColumnName="O2SatPostduct" />
+          <ScalarProperty Name="Plus" ColumnName="Plus" />
+          <ScalarProperty Name="Respirations" ColumnName="Respirations" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="CreateOn" ColumnName="CreateOn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ipdBodies">
+      <EntityTypeMapping TypeName="PTLModel.ipdBody">
+        <MappingFragment StoreEntitySet="ipdBody">
+          <ScalarProperty Name="CreateOn" ColumnName="CreateOn" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Chest" ColumnName="Chest" />
+          <ScalarProperty Name="Head" ColumnName="Head" />
+          <ScalarProperty Name="BM1" ColumnName="BM1" />
+          <ScalarProperty Name="Hip" ColumnName="Hip" />
+          <ScalarProperty Name="Waistline" ColumnName="Waistline" />
+          <ScalarProperty Name="Height" ColumnName="Height" />
+          <ScalarProperty Name="Weight" ColumnName="Weight" />
+          <ScalarProperty Name="wk_time_text" ColumnName="wk_time_text" />
+          <ScalarProperty Name="wk_time" ColumnName="wk_time" />
+          <ScalarProperty Name="wk_date_text" ColumnName="wk_date_text" />
+          <ScalarProperty Name="wk_date" ColumnName="wk_date" />
+          <ScalarProperty Name="wk_Period" ColumnName="wk_Period" />
+          <ScalarProperty Name="Seq" ColumnName="Seq" />
+          <ScalarProperty Name="AN" ColumnName="AN" />
+          <ScalarProperty Name="RegNo" ColumnName="RegNo" />
+          <ScalarProperty Name="HN" ColumnName="HN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ipdFluids">
+      <EntityTypeMapping TypeName="PTLModel.ipdFluid">
+        <MappingFragment StoreEntitySet="ipdFluid">
+          <ScalarProperty Name="CreateOn" ColumnName="CreateOn" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Urine" ColumnName="Urine" />
+          <ScalarProperty Name="Stools" ColumnName="Stools" />
+          <ScalarProperty Name="Aspiration" ColumnName="Aspiration" />
+          <ScalarProperty Name="Drainage" ColumnName="Drainage" />
+          <ScalarProperty Name="Emesis" ColumnName="Emesis" />
+          <ScalarProperty Name="Unine" ColumnName="Unine" />
+          <ScalarProperty Name="Parenteral" ColumnName="Parenteral" />
+          <ScalarProperty Name="OralFluid" ColumnName="OralFluid" />
+          <ScalarProperty Name="wk_time_text" ColumnName="wk_time_text" />
+          <ScalarProperty Name="wk_time" ColumnName="wk_time" />
+          <ScalarProperty Name="wk_date_text" ColumnName="wk_date_text" />
+          <ScalarProperty Name="wk_date" ColumnName="wk_date" />
+          <ScalarProperty Name="wk_Period" ColumnName="wk_Period" />
+          <ScalarProperty Name="Seq" ColumnName="Seq" />
+          <ScalarProperty Name="AN" ColumnName="AN" />
+          <ScalarProperty Name="RegNo" ColumnName="RegNo" />
+          <ScalarProperty Name="HN" ColumnName="HN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ipdOthers">
+      <EntityTypeMapping TypeName="PTLModel.ipdOther">
+        <MappingFragment StoreEntitySet="ipdOther">
+          <ScalarProperty Name="CreateOn" ColumnName="CreateOn" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="SOS" ColumnName="SOS" />
+          <ScalarProperty Name="Lochia" ColumnName="Lochia" />
+          <ScalarProperty Name="Episiotomy" ColumnName="Episiotomy" />
+          <ScalarProperty Name="HF" ColumnName="HF" />
+          <ScalarProperty Name="wk_time_text" ColumnName="wk_time_text" />
+          <ScalarProperty Name="wk_time" ColumnName="wk_time" />
+          <ScalarProperty Name="wk_date_text" ColumnName="wk_date_text" />
+          <ScalarProperty Name="wk_date" ColumnName="wk_date" />
+          <ScalarProperty Name="wk_Period" ColumnName="wk_Period" />
+          <ScalarProperty Name="Seq" ColumnName="Seq" />
+          <ScalarProperty Name="AN" ColumnName="AN" />
+          <ScalarProperty Name="RegNo" ColumnName="RegNo" />
+          <ScalarProperty Name="HN" ColumnName="HN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ipdPains">
+      <EntityTypeMapping TypeName="PTLModel.ipdPain">
+        <MappingFragment StoreEntitySet="ipdPain">
+          <ScalarProperty Name="CreateOn" ColumnName="CreateOn" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Pain" ColumnName="Pain" />
+          <ScalarProperty Name="wk_time_text" ColumnName="wk_time_text" />
+          <ScalarProperty Name="wk_time" ColumnName="wk_time" />
+          <ScalarProperty Name="wk_date_text" ColumnName="wk_date_text" />
+          <ScalarProperty Name="wk_date" ColumnName="wk_date" />
+          <ScalarProperty Name="wk_Period" ColumnName="wk_Period" />
+          <ScalarProperty Name="Seq" ColumnName="Seq" />
+          <ScalarProperty Name="AN" ColumnName="AN" />
+          <ScalarProperty Name="RegNo" ColumnName="RegNo" />
+          <ScalarProperty Name="HN" ColumnName="HN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ipdTemperatures">
+      <EntityTypeMapping TypeName="PTLModel.ipdTemperature">
+        <MappingFragment StoreEntitySet="ipdTemperature">
+          <ScalarProperty Name="CreateOn" ColumnName="CreateOn" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Temperature" ColumnName="Temperature" />
+          <ScalarProperty Name="wk_time_text" ColumnName="wk_time_text" />
+          <ScalarProperty Name="wk_time" ColumnName="wk_time" />
+          <ScalarProperty Name="wk_date_text" ColumnName="wk_date_text" />
+          <ScalarProperty Name="wk_date" ColumnName="wk_date" />
+          <ScalarProperty Name="wk_Period" ColumnName="wk_Period" />
+          <ScalarProperty Name="Seq" ColumnName="Seq" />
+          <ScalarProperty Name="AN" ColumnName="AN" />
+          <ScalarProperty Name="RegNo" ColumnName="RegNo" />
+          <ScalarProperty Name="HN" ColumnName="HN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ptl_consult">
+      <EntityTypeMapping TypeName="PTLModel.ptl_consult">
+        <MappingFragment StoreEntitySet="ptl_consult">
+          <ScalarProperty Name="order_id" ColumnName="order_id" />
+          <ScalarProperty Name="acc_time" ColumnName="acc_time" />
+          <ScalarProperty Name="acc_date" ColumnName="acc_date" />
+          <ScalarProperty Name="doc_comment" ColumnName="doc_comment" />
+          <ScalarProperty Name="acc_doc" ColumnName="acc_doc" />
+          <ScalarProperty Name="cs_status" ColumnName="cs_status" />
+          <ScalarProperty Name="cs_detail" ColumnName="cs_detail" />
+          <ScalarProperty Name="cs_header" ColumnName="cs_header" />
+          <ScalarProperty Name="cs_cname" ColumnName="cs_cname" />
+          <ScalarProperty Name="cs_time" ColumnName="cs_time" />
+          <ScalarProperty Name="cs_date" ColumnName="cs_date" />
+          <ScalarProperty Name="AN" ColumnName="AN" />
+          <ScalarProperty Name="cs_id" ColumnName="cs_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

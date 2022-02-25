@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="cf47daccc0ff4167b9fcf41384cd5c5e" Name="Diagram1">
+        <EntityTypeShape EntityType="PTLModel.ipdVitalSign" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PTLModel.ipdBody" Width="1.5" PointX="3.75" PointY="0.75" />
+        <EntityTypeShape EntityType="PTLModel.ipdFluid" Width="1.5" PointX="5.75" PointY="0.75" />
+        <EntityTypeShape EntityType="PTLModel.ipdOther" Width="1.5" PointX="0.75" PointY="6.75" />
+        <EntityTypeShape EntityType="PTLModel.ipdPain" Width="1.5" PointX="2.75" PointY="6.75" />
+        <EntityTypeShape EntityType="PTLModel.ipdTemperature" Width="1.5" PointX="4.75" PointY="6.75" />
+        <EntityTypeShape EntityType="PTLModel.ptl_consult" Width="1.5" PointX="7.375" PointY="6.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

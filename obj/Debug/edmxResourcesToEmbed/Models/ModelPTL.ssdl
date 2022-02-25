@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PTLModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="ipdBody">
+    <Key>
+      <PropertyRef Name="HN" />
+      <PropertyRef Name="RegNo" />
+      <PropertyRef Name="AN" />
+      <PropertyRef Name="Seq" />
+    </Key>
+    <Property Name="HN" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="RegNo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="AN" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Seq" Type="int" Nullable="false" />
+    <Property Name="wk_Period" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="wk_date" Type="datetime" Nullable="false" />
+    <Property Name="wk_date_text" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="wk_time" Type="time" Precision="7" Nullable="false" />
+    <Property Name="wk_time_text" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Weight" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Height" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Waistline" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Hip" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="BM1" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Head" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Chest" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="UserID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="UserName" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="CreateOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="ipdFluid">
+    <Key>
+      <PropertyRef Name="HN" />
+      <PropertyRef Name="RegNo" />
+      <PropertyRef Name="AN" />
+      <PropertyRef Name="Seq" />
+    </Key>
+    <Property Name="HN" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="RegNo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="AN" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Seq" Type="int" Nullable="false" />
+    <Property Name="wk_Period" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="wk_date" Type="datetime" Nullable="false" />
+    <Property Name="wk_date_text" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="wk_time" Type="time" Precision="7" Nullable="false" />
+    <Property Name="wk_time_text" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="OralFluid" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Parenteral" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Unine" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Emesis" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Drainage" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Aspiration" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Stools" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Urine" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="UserID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="UserName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreateOn" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ipdOther">
+    <Key>
+      <PropertyRef Name="HN" />
+      <PropertyRef Name="RegNo" />
+      <PropertyRef Name="AN" />
+      <PropertyRef Name="Seq" />
+    </Key>
+    <Property Name="HN" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="RegNo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="AN" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Seq" Type="int" Nullable="false" />
+    <Property Name="wk_Period" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="wk_date" Type="datetime" Nullable="false" />
+    <Property Name="wk_date_text" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="wk_time" Type="time" Precision="7" Nullable="false" />
+    <Property Name="wk_time_text" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="HF" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Episiotomy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Lochia" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="SOS" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="UserID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="UserName" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="CreateOn" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ipdPain">
+    <Key>
+      <PropertyRef Name="HN" />
+      <PropertyRef Name="RegNo" />
+      <PropertyRef Name="AN" />
+      <PropertyRef Name="Seq" />
+    </Key>
+    <Property Name="HN" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="RegNo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="AN" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Seq" Type="int" Nullable="false" />
+    <Property Name="wk_Period" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="wk_date" Type="datetime" Nullable="false" />
+    <Property Name="wk_date_text" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="wk_time" Type="time" Precision="7" Nullable="false" />
+    <Property Name="wk_time_text" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Pain" Type="int" Nullable="false" />
+    <Property Name="UserID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="UserName" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="CreateOn" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ipdTemperature">
+    <Key>
+      <PropertyRef Name="HN" />
+      <PropertyRef Name="RegNo" />
+      <PropertyRef Name="AN" />
+      <PropertyRef Name="Seq" />
+    </Key>
+    <Property Name="HN" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="RegNo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="AN" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Seq" Type="int" Nullable="false" />
+    <Property Name="wk_Period" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="wk_date" Type="datetime" Nullable="false" />
+    <Property Name="wk_date_text" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="wk_time" Type="time" Precision="7" Nullable="false" />
+    <Property Name="wk_time_text" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Temperature" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="UserID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="UserName" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="CreateOn" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ipdVitalSign">
+    <Key>
+      <PropertyRef Name="HN" />
+      <PropertyRef Name="RegNo" />
+      <PropertyRef Name="AN" />
+      <PropertyRef Name="Seq" />
+    </Key>
+    <Property Name="HN" Type="varchar" MaxLength="7" Nullable="false" />
+    <Property Name="RegNo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="AN" Type="varchar" MaxLength="7" Nullable="false" />
+    <Property Name="Seq" Type="int" Nullable="false" />
+    <Property Name="wk_Period" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="wk_date" Type="datetime" Nullable="false" />
+    <Property Name="wk_date_text" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="wk_time" Type="time" Precision="7" Nullable="false" />
+    <Property Name="wk_time_text" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Systolic" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Diastotic" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="MAP" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="O2Sat" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="O2SatPreduct" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="O2SatPostduct" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Plus" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Respirations" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="UserID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="UserName" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="CreateOn" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ptl_consult">
+    <Key>
+      <PropertyRef Name="cs_id" />
+    </Key>
+    <Property Name="cs_id" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="AN" Type="char" MaxLength="7" />
+    <Property Name="cs_date" Type="char" MaxLength="8" />
+    <Property Name="cs_time" Type="datetime" />
+    <Property Name="cs_cname" Type="varchar" MaxLength="50" />
+    <Property Name="cs_header" Type="varchar" MaxLength="150" />
+    <Property Name="cs_detail" Type="varchar(max)" />
+    <Property Name="cs_status" Type="char" MaxLength="1" />
+    <Property Name="acc_doc" Type="char" MaxLength="6" />
+    <Property Name="doc_comment" Type="varchar(max)" />
+    <Property Name="acc_date" Type="char" MaxLength="8" />
+    <Property Name="acc_time" Type="datetime" />
+    <Property Name="order_id" Type="varchar" MaxLength="15" />
+  </EntityType>
+  <EntityContainer Name="PTLModelStoreContainer">
+    <EntitySet Name="ipdBody" EntityType="Self.ipdBody" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ipdFluid" EntityType="Self.ipdFluid" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ipdOther" EntityType="Self.ipdOther" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ipdPain" EntityType="Self.ipdPain" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ipdTemperature" EntityType="Self.ipdTemperature" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ipdVitalSign" EntityType="Self.ipdVitalSign" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ptl_consult" EntityType="Self.ptl_consult" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
